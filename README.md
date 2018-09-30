@@ -14,7 +14,7 @@ Example of using a seed-all job with the Jenkins job DSL plugin
 
 1. Create a new job
 2. Name it "Seed All"
-  * can be anything, but must be same as contained in `seed_all.groovy`
+    * can be anything, but must be same as contained in `seed_all.groovy`
 3. Choose "Freestyle project"
 4. Click "OK"
 5. Under "Source Code Management", choose "git"
@@ -24,14 +24,14 @@ Example of using a seed-all job with the Jenkins job DSL plugin
 9. In "DSL Scripts", enter `jobs/seed_all.groovy`
 10. Click "Save"
 11. Click "Build now"
-  * You should see a single job named "Seed All"
+    * You should see a single job named "Seed All"
 12. Run the "Seed All" job
-  * The job will pull in the remote repo and replace itself using the configuration defined in seed_all.groovy
+    * The job will pull in the remote repo and replace itself using the configuration defined in seed_all.groovy
 13. Return to the dashboard.
-  * There should still only be a single job named "Seed All"
+    * There should still only be a single job named "Seed All"
 14. Run the "Seed All" job
-..* The job will run again and create a job named "Hello World"
+    * The job will run again and create a job named "Hello World"
 15. Refresh the view (of the Dashboard)
-  * There should now be two jobs:
-    * the original "Seed All" job
-    * the new "Hello World" job
+    * There should now be two jobs:
+        * the original "Seed All" job
+        * the new "Hello World" job
